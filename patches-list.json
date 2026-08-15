@@ -1,5 +1,84 @@
 {
   "NOTE": "Do NOT manually edit this file. This file is automatically updated when semantic release (release.yml) runs. Manually editing this file can break your releases and break third party tools that use this file.",
-  "version": "0.0.0",
-  "patches": []
+  "version": "1.0.0",
+  "patches": [
+    {
+      "name": "Hide Pur",
+      "description": "Hides the Pur ad-free subscription option from the settings menu.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.ebay.kleinanzeigen",
+          "name": "Kleinanzeigen",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#2EAD33",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "2026.32.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Hide ads",
+      "description": "Hides sponsored ads and Google Ads in Kleinanzeigen and disables Microsoft Clarity analytics.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.ebay.kleinanzeigen",
+          "name": "Kleinanzeigen",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#2EAD33",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "2026.32.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    },
+    {
+      "name": "Remove tracking parameters from share URLs",
+      "description": "Strips UTM tracking parameters from URLs shared via the in-app share function.",
+      "default": true,
+      "dependencies": [],
+      "compatiblePackages": [
+        {
+          "packageName": "com.ebay.kleinanzeigen",
+          "name": "Kleinanzeigen",
+          "description": null,
+          "apkFileType": "APK",
+          "appIconColor": "#2EAD33",
+          "signatures": null,
+          "targets": [
+            {
+              "version": "2026.32.0",
+              "versionCodes": null,
+              "isExperimental": false,
+              "minSdk": null,
+              "description": null
+            }
+          ]
+        }
+      ],
+      "options": []
+    }
+  ]
 }

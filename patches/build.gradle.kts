@@ -1,14 +1,13 @@
-group = "app.template"
+group = "app.purifree"
 
 patches {
-    // TODO: Update this section with your project details.
     about {
-        name = "UserXYZ Patches"
-        description = "Patches for apps I like"
-        source = "git@github.com:UserXYZ/morphe-patches.git"
-        author = "Awesome dev"
-        contact = "na"
-        website = "na"
+        name = "PuriFree"
+        description = "Hide ads and the Pur subscription option, and strip UTM tracking parameters from share URLs in Kleinanzeigen."
+        source = "https://github.com/cyborium/purifree.git"
+        author = "cyborium"
+        contact = "https://github.com/cyborium/purifree/issues"
+        website = "https://github.com/cyborium/purifree"
         license = "GPLv3"
     }
 }
