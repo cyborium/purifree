@@ -52,6 +52,18 @@ See `docs/` in the workspace root for detailed specifications and requirements.
 
 ---
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for:
+- Build setup and commands
+- Code conventions and fingerprint guidelines
+- Commit message format (Conventional Commits)
+- Branch workflow (dev → main)
+- Adding new patches (6-step checklist)
+- Version verification policy (CR-001)
+
+---
+
 ## Usage
 
 Click here to add these patches to Morphe: https://morphe.software/add-source?github=cyborium/purifree
