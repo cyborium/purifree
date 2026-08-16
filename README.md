@@ -22,16 +22,13 @@
 | App Version | Hide Ads | Hide Pur | Remove Tracking | Verified Date | Notes |
 |-------------|----------|----------|-----------------|---------------|-------|
 | **2026.32.0** | ✅ Verified | ✅ Verified | ✅ Verified | 2026-08-15 | Production release |
-| 2026.27.0 | ⚠️ Untested | ⚠️ Untested | ⚠️ Untested | — | Not verified — do not use |
-| 2026.16.1 | ⚠️ Untested | ⚠️ Untested | ⚠️ Untested | — | Not verified — do not use |
-| < 2026.14.0 | ❌ Unsupported | ❌ Unsupported | ❌ Unsupported | — | Fingerprint may not match |
+| **< 2026.32.0** | ❌ Unsupported | ❌ Unsupported | ❌ Unsupported | — | Not supported — fingerprints target 2026.32.0 bytecode structure |
 
 **Legend:**
 - ✅ **Verified**: Bytecode + UI tested on this version
-- ⚠️ **Untested**: May work, but not verified (CR-001 policy: do not declare compatibility)
-- ❌ **Unsupported**: Known incompatibilities or fingerprint changes
+- ❌ **Unsupported**: Version not supported — patches target 2026.32.0 bytecode structure and may crash or fail to apply on other versions
 
-To request verification for a specific version, [open an issue](https://github.com/cyborium/purifree/issues) with the version number and APK build code.
+To request support for a specific version, [open an issue](https://github.com/cyborium/purifree/issues) with the version number and APK build code.
 
 <!-- PATCHES_START EXPANDED -->
 
