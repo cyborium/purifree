@@ -25,6 +25,10 @@ val patchListGeneratorClasspath = configurations.create("patchListGeneratorClass
 dependencies {
     compileOnly(libs.gson)
     patchListGeneratorClasspath(libs.gson)
+
+    testImplementation("junit:junit:4.13.2")
+    testImplementation("org.ow2.asm:asm-analysis:9.7.1")
+    testImplementation("org.ow2.asm:asm-tree:9.7.1")
 }
 
 tasks {
@@ -40,5 +44,12 @@ tasks {
     // Used by gradle-semantic-release-plugin.
     publish {
         dependsOn("generatePatchesList")
+    }
+
+    test {
+        useJUnit()
+        testLogging {
+            events("passed", "skipped", "failed")
+        }
     }
 }
