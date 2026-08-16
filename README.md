@@ -1,8 +1,17 @@
 # PuriFree
 
-Patches for Kleinanzeigen: hide ads, hide the Pur subscription option, and strip UTM tracking parameters from share URLs.
+**Multi-target Morphe patch bundle** — currently supports Kleinanzeigen (hide ads, hide Pur subscription, strip UTM tracking from share URLs).
 
-## Patches list
+**Brand:** PuriFree (umbrella project for multiple app targets)
+
+## Supported Apps
+
+| App | Package | Patches | Status |
+|-----|---------|---------|--------|
+| Kleinanzeigen | `com.ebay.kleinanzeigen` | Hide ads, Hide Pur, Remove tracking params | ✅ Production (v2026.32.0) |
+| *More apps coming soon* | — | — | 🚧 Planned |
+
+## Patches (Kleinanzeigen)
 
 <!-- PATCHES_START EXPANDED -->
 
@@ -16,6 +25,32 @@ Patches for Kleinanzeigen: hide ads, hide the Pur subscription option, and strip
 #### A list of your patches will automatically be shown here after your first patches release is created.
 
 &nbsp;
+
+## Extensions Module
+
+PuriFree includes an extensions module (`extensions/extension/`) for patches requiring:
+- **New components**: Activities, Services, BroadcastReceivers, ContentProviders
+- **Custom Java/Kotlin code**: Complex logic not expressible via bytecode patches alone
+- **Resource additions**: Layouts, strings, drawables, styles
+- **Manifest modifications**: Permissions, intents, metadata
+
+Current Kleinanzeigen patches use **bytecode-only** modifications (no extension calls). The module is scaffolded for future multi-target patches that require it.
+
+## Automated Testing Roadmap
+
+Multi-target support requires automated testing across app versions. Planned infrastructure:
+
+| Component | Purpose | Status |
+|-----------|---------|--------|
+| **APK archive** | Store historical APKs per app/version | 📋 TODO |
+| **CI matrix** | Test each patch against declared versions | 📋 TODO |
+| **Bytecode verification** | Assert expected instructions inserted | 📋 TODO |
+| **UI automation** | Verify runtime behavior (e.g., Pur row absent) | 📋 TODO |
+| **Version gate** | Block release if untested version declared | 📋 TODO |
+
+See `docs/` in the workspace root for detailed specifications and requirements.
+
+---
 
 ## Usage
 
