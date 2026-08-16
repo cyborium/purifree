@@ -6,12 +6,32 @@
 
 ## Supported Apps
 
-| App | Package | Patches | Status |
-|-----|---------|---------|--------|
-| Kleinanzeigen | `com.ebay.kleinanzeigen` | Hide ads, Hide Pur, Remove tracking params | ✅ Production (v2026.32.0) |
-| *More apps coming soon* | — | — | 🚧 Planned |
+| App | Package | Patches | Verified Versions | Status |
+|-----|---------|---------|-------------------|--------|
+| Kleinanzeigen | `com.ebay.kleinanzeigen` | Hide ads, Hide Pur, Remove tracking | 2026.32.0 | ✅ Production |
+| *More apps* | — | — | — | 🚧 Planned |
+
+**See [Version Compatibility](#version-compatibility) for detailed patch-by-version matrix.**
 
 ## Patches (Kleinanzeigen)
+
+### Version Compatibility
+
+**Policy (CR-001):** Patches are only declared compatible with versions that have been verified (bytecode + UI testing).
+
+| App Version | Hide Ads | Hide Pur | Remove Tracking | Verified Date | Notes |
+|-------------|----------|----------|-----------------|---------------|-------|
+| **2026.32.0** | ✅ Verified | ✅ Verified | ✅ Verified | 2026-08-15 | Production release |
+| 2026.27.0 | ⚠️ Untested | ⚠️ Untested | ⚠️ Untested | — | Not verified — do not use |
+| 2026.16.1 | ⚠️ Untested | ⚠️ Untested | ⚠️ Untested | — | Not verified — do not use |
+| < 2026.14.0 | ❌ Unsupported | ❌ Unsupported | ❌ Unsupported | — | Fingerprint may not match |
+
+**Legend:**
+- ✅ **Verified**: Bytecode + UI tested on this version
+- ⚠️ **Untested**: May work, but not verified (CR-001 policy: do not declare compatibility)
+- ❌ **Unsupported**: Known incompatibilities or fingerprint changes
+
+To request verification for a specific version, [open an issue](https://github.com/cyborium/purifree/issues) with the version number and APK build code.
 
 <!-- PATCHES_START EXPANDED -->
 
