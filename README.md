@@ -8,7 +8,7 @@
 
 | App | Package | Patches | Verified Versions | Status |
 |-----|---------|---------|-------------------|--------|
-| Kleinanzeigen | `com.ebay.kleinanzeigen` | Hide ads, Hide Pur, Remove tracking | 2026.32.0 | ✅ Production |
+| Kleinanzeigen | `com.ebay.kleinanzeigen` | Hide ads, Hide Pur, Remove tracking | 2026.32.0, 2026.32.1 | ✅ Production |
 | *More apps* | — | — | — | 🚧 Planned |
 
 **See [Version Compatibility](#version-compatibility) for detailed patch-by-version matrix.**
@@ -22,7 +22,8 @@
 | App Version | Hide Ads | Hide Pur | Remove Tracking | Verified Date | Notes |
 |-------------|----------|----------|-----------------|---------------|-------|
 | **2026.32.0** | ✅ Verified | ✅ Verified | ✅ Verified | 2026-08-15 | Production release |
-| **< 2026.32.0** | ❌ Unsupported | ❌ Unsupported | ❌ Unsupported | — | Not supported — fingerprints target 2026.32.0 bytecode structure |
+| **2026.32.1** | ✅ Verified | ✅ Verified | ✅ Verified | 2026-08-16 | Bytecode structure identical to 2026.32.0 |
+| **< 2026.32.0** | ❌ Unsupported | ❌ Unsupported | ❌ Unsupported | — | Not supported — fingerprints target 2026.32.x bytecode structure |
 
 **Legend:**
 - ✅ **Verified**: Bytecode + UI tested on this version

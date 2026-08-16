@@ -14,6 +14,9 @@ object Constants {
             // App version confirmed 100% working.
             AppTarget(
                 version = "2026.32.0"
+            ),
+            AppTarget(
+                version = "2026.32.1" // Verified 2026-08-16: bytecode structure identical to 2026.32.0
             )
         )
     )
